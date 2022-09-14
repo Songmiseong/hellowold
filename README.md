@@ -37,3 +37,28 @@ print(python.find("Java"))  # 두 예시 모두 오류 이지만 파인드는 -1
 print(python.count("n")) #n의 갯수
 print(python.find("python")) #index의 다른 방법이지 않을까?
 print(python.find("n")) # 맞네,  이것 또한 n이 위치한 자리를 알려줌
+
+#문자열포맷
+print("a" + "b")
+print("a" , "b")
+# 방법1)
+print("나는 %d살 입니다" %20)
+print("나는 %s을 졸아해요" %"파이썬")
+print("APPLE은 %c로 시작해요" %"A")
+#모든 항목에 %S 사용가능
+print("나는 %s살 입니다" %20)
+print("APPLE은 %s로 시작해요" %"A")
+print("나는 %s색과 %s색을 좋아해요"%("파란", "빨간"))
+#방법2
+print("나는 {}살 입니다".format(20))
+print("나는 {}색과 {}색을 좋아해요".format("파란","빨간"))
+print("나는 {0}색과 {1}색을 좋아해요".format("파란","빨간"))
+print("나는 {1}색과 {0}색을 좋아해요".format("파란","빨간"))
+#방법3
+print("나는 {age} 살이며, {color}색을 좋아해요".format(age=20, color="빨간"))
+print("나는 {age} 살이며, {color}색을 좋아해요".format(color="빨간",age=20))
+#방법4
+#f붙이기
+age=20
+color="빨간"
+print(f"나는 {age} 살이며, {color}색을 좋아해요")
